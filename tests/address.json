@@ -1,0 +1,39 @@
+{
+  "Permanent_Address": {
+    "House_Number": "1",
+    "City": "Waterloo",
+    "State": "Ontario",
+    "Country": "Canada",
+    "PhoneNumber": [
+      {
+        "Std_Code": "1",
+        "Home": "111-111",
+        "Mobile": "111-222-3333"
+      },
+      {
+        "Std_Code": "2",
+        "Home": "222-222",
+        "Mobile": "666-777-8888"
+      }
+    ]
+  },
+  "Current_Address": {
+    "House_Number": "1",
+    "City": "Test city",
+    "State": "Test State",
+    "Country": "Canada",
+    "PhoneNumber": [
+      {
+        "Std_Code": "3",
+        "Home": "333-333",
+        "Mobile": "333-444-5555"
+      },
+      {
+        "Std_Code": "4",
+        "Home": "444-444",
+        "Mobile": "444-555-6666"
+      }
+    ]
+  },
+  "stId": "2679122"
+}

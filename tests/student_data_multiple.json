@@ -1,0 +1,7 @@
+{
+"students":[
+  {"first_name":"Student1", "middle_name":"Mid1", "last_name": "LastName1", "date_of_birth": "11Jul"},
+  {"first_name":"Student2", "middle_name":"Mid2", "last_name": "LastName2", "date_of_birth": "12Jul"},
+  {"first_name":"Student3", "middle_name":"Mid3", "last_name": "LastName3", "date_of_birth": "13Jul"}
+]
+}
