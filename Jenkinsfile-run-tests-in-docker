@@ -1,0 +1,29 @@
+pipeline {
+    agent any
+    stages {
+        stage('build') {
+            steps {
+                sh 'docker build --tag api_automation .'
+            }
+        }
+
+        stage('run') {
+            steps {
+                sh 'docker run -v ${PWD}/allure-results/default/results:/api_automation/allure-results api_automation'
+            }
+        }
+    }
+    post('Allure reports') {
+        always {
+            script {
+              allure([
+                includeProperties: true,
+                jdk: '',
+                properties: [],
+                reportBuildPolicy: 'ALWAYS',
+                results: [[path: 'allure-results/default/results']]
+              ])
+            }
+          }
+    }
+}
