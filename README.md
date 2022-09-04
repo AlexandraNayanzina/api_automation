@@ -8,14 +8,14 @@ jenkins-lts
 
 #### Build the image  
 ``` shell  
-docker build --tag pytest_template .  
+docker build --tag api_automation .  
 ```
 #### Run image  
 ``` shell  
  docker run \
     -d \
     -v ${PWD}/allure-results/default/results:/pytest_template/allure-results \
-    pytest_template
+    api_automation
 ```
 #### Run docker-compose for generating and displaying Allure reports  
 ``` shell  
@@ -46,7 +46,7 @@ docker run -d \
 docker run \
     -d \
     -v ${PWD}/allure-results/default/results:/pytest_template/allure-results \
-    pytest_template  
+    api_automation  
 ```
 
 # Useful info
